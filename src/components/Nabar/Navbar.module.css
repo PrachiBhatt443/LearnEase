@@ -5,18 +5,33 @@
     font-weight: 600;
   }
 .logo{
-    font-size: larger;
+    font-size:35px;
+    font-weight: 700;
+    color: rgb(62, 63, 65);
 }
+
 .nav{
     padding: 20px;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding: 3%;
     display: flex;
     justify-content:space-between;
+    gap: 70px;
     align-items: center;
     font: 20px bold ;
+    /* z-index: 1000; */
     background-color: rgba(217, 217, 217, 1);
+    position: fixed;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     height: 46px;
+    width: 100%;
+    
+}
+.logo img{
+  /* font-size: larger; */
+    width: 75px;
+    height: 80px;
+    /* padding: 4px; */
+    /* size: 200px; */
 }
 .nav ul {
     display: flex;

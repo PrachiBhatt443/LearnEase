@@ -1,53 +1,193 @@
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* font-weight: 600; */
-    /* background-color: rgba(217, 217, 217, 1); */
 }
-
 .H1{
     padding-left: 8%;
-    padding-top: 50px;
-    /* padding-right: 8%; */
-    font-size: 98px;
+    /* padding-top: 1px; */
+    font-size: 82px;
     font-weight: 700;
     line-height: 112px;
-    letter-spacing: -0.04em;
+    /* letter-spacing: -0.07em; */
     text-align: left;
     width: 600px;
-    margin: 18% 14% 0;
+    margin: 24% 14% 0;
     background-color: rgba(217, 217, 217, 1);
 }
 .H5{
     padding-left: 21%;
-    font-size: 98px;
+    font-size: 80px;
     font-weight: 700;
     line-height: 112px;
-    letter-spacing: -0.04em;
+    /* letter-spacing: 0em; */
     text-align: left;
     width: 600px;
-    /* margin: 18% 14% 0; */
-   
 }
-.btn{
-    display: flex;
-    gap: 24px;
-    margin: 2% 24% auto;
-}
+
 .redText {
-    color: rgb(244, 105, 105);; /* Color for "PRO" */
+    color: rgb(244, 105, 105); /* Color for "PRO" */
   }
 .main{
     display: flex;
-    gap :150px;
+    gap :130px;
     margin: auto;
     background-color: rgba(217, 217, 217, 1);
 }
 .IMG{
-    /* width: 400px; */
     height: 550px;
-    margin: 3% ;
+    margin: 8% ;
     background-color: rgba(217, 217, 217, 1);
 }
+/* Explore */
+
+.explorecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+    /* display: flex;
+    gap: 120px;
+    margin: auto; */
+  }
+  
+  .centered {
+    text-align: center;
+    padding: 10px;
+    justify-content: space-between;
+    font-size: 32px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc; 
+    margin: 10px 80px; 
+    cursor: pointer;
+  }
+  
+  button.centered {
+    padding: 10px 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 16px;
+    background-color: rgb(244, 105, 105);/* Example button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  /* Features */
+  .f{
+    display: flex;
+    gap :120px;
+    margin: auto;
+    background-color: rgb(244, 105, 105);
+  }
+  .fH1{
+    font-size: 24px;
+    margin: 9% 0 2% 0;
+    font-weight: 700;
+  }
+  .ftext{
+    font-size: 24px;
+    color: aliceblue;
+    width:600px;
+  }
+  .fIMG{
+    height: 300px;
+    margin: 3% ;
+    margin-left:12%;
+  }
+  .fH5{
+      padding-left: 5%;
+      padding-top: 6%;
+      padding: auto;
+      font-size: 70px;
+      font-weight: 750;
+      line-height: 112px;
+      letter-spacing: -0.01em;
+      /* text-align: center; */
+      /* width: 600px; */
+      color: rgb(244, 105, 105); /* Color for "PRO" */
+  }
+  .featurecontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 20%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .featuretext {
+    flex: 1;
+    margin: 2% 4%;
+    font-size: 24px;
+  }
+  
+  .featuretext ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .featuretext li {
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .featuretext li.active {
+    background-color: #add8e6; /* Light blue color when active */
+  }
+  
+  .featureimage {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .featureimage img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+/* Footer */
+.footH{
+    font-size:70px;
+    padding-top: 3% ;
+    margin-left:10%;
+    font-weight: 700;
+    color: aliceblue;
+    line-height: 40px;
+}
+.footH5{
+    font-size: 70px;
+    margin-left:10%;
+    font-weight: bold;
+    color: rgb(244, 105, 105);
+}
+.footM{
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    font-size: 24px;
+    padding: 1% 10%;
+    gap: 49%;
+    margin-top: 8%;
+    /* padding-top: 2%; */
+    
+    
+    /* padding: 0; */
+    /* justify-content: space-between; */
+}
+.foot{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: space-around;
+}
+
 
 @media (max-width: 768px) {
     .H1{
@@ -57,7 +197,6 @@
         line-height: 56px;
         text-align: left; 
         width: 80vw;
-        /* color: aliceblue; */
         margin: 20% 8% auto;
     }
     .H5{
