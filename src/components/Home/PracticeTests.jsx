@@ -3,7 +3,7 @@ import styles from './Home.module.css'
 import p from '../img/brain.png';
 // import Features from './Features';
 import Foot from '../footer/Foot';
-import TestList from './Quiz/TestList';
+import GateTestPractice from './Gate/GateTestPractice';
 const PracticeTests = () => {
   return (
     <>
@@ -18,7 +18,7 @@ const PracticeTests = () => {
         </section>
         <img className={styles.IMG} src={p}/>
       </div>
-      <TestList/>
+      <GateTestPractice/>
       <Foot/>
     </>   
    

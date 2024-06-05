@@ -1,16 +1,18 @@
 import React, { useRef, useState } from 'react';
+import { Tabs, TabList, Tab, TabPanels, TabPanel, Box, Heading, Text } from '@chakra-ui/react';
 import { Toast } from 'primereact/toast';
 import { FileUpload } from 'primereact/fileupload';
 import { ProgressBar } from 'primereact/progressbar';
 import { Button } from 'primereact/button';
 import { Tooltip } from 'primereact/tooltip';
 import { Tag } from 'primereact/tag';
-import 'primereact/resources/themes/saga-blue/theme.css';  // or any other theme you prefer
+import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
+import Foot from '../../footer/Foot';
 
-const FileU = () => {
+const FileU = ({ uploadUrl, label }) => {
     const toast = useRef(null);
     const [totalSize, setTotalSize] = useState(0);
     const fileUploadRef = useRef(null);
@@ -105,7 +107,9 @@ const FileU = () => {
             <Tooltip target=".custom-upload-btn" content="Upload" position="bottom" />
             <Tooltip target=".custom-cancel-btn" content="Clear" position="bottom" />
 
-            <FileUpload ref={fileUploadRef} name="demo[]" url="/api/upload" multiple accept="image/*" maxFileSize={1000000}
+            <Heading size="lg" mb={5}>{label}</Heading>
+
+            <FileUpload ref={fileUploadRef} name="demo[]" url={uploadUrl} multiple accept="image/*" maxFileSize={1000000}
                 onUpload={onTemplateUpload} onSelect={onTemplateSelect} onError={onTemplateClear} onClear={onTemplateClear}
                 headerTemplate={headerTemplate} itemTemplate={itemTemplate} emptyTemplate={emptyTemplate}
                 chooseOptions={chooseOptions} uploadOptions={uploadOptions} cancelOptions={cancelOptions} />

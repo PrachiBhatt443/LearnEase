@@ -12,7 +12,7 @@ const TestList = () => {
   
     return (
       <div className={styles.testListContainer}>
-        <h1>Available Tests</h1>
+        <h1>Available Quiz</h1>
         <ul className={styles.testList}>
           {tests.map((test, index) => (
             <li key={index} className={styles.testItem}>

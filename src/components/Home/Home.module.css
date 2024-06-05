@@ -39,44 +39,61 @@
 }
 /* Explore */
 
+/* Explore */
 .explorecontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 40px;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px; 
-    /* display: flex;
-    gap: 120px;
-    margin: auto; */
-  }
-  
-  .centered {
-    text-align: center;
-    padding: 10px;
-    justify-content: space-between;
-    font-size: 32px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc; 
-    margin: 10px 80px; 
-    cursor: pointer;
-  }
-  
-  button.centered {
-    padding: 10px 20px;
-    padding-left: 18px;
-    padding-right: 18px;
-    font-size: 16px;
-    background-color: rgb(244, 105, 105);/* Example button color */
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  background-color: #f8f9fa; /* Light background color for the container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.centered {
+  text-align: center;
+  padding: 15px 30px; /* Increased padding for better touch targets */
+  font-size: 24px;
+  background-color: #ffffff; /* White background for the items */
+  border: 1px solid #dee2e6; /* Light border for separation */
+  margin: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.centered:hover {
+  background-color: #e9ecef; /* Light grey background on hover */
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
+button.centered {
+  padding: 15px 30px; /* Increased padding for better touch targets */
+  font-size: 18px;
+  background-color: rgb(244, 105, 105); /* Blue background for the button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+button.centered:hover {
+  background-color: rgb(244, 105, 105); /* Darker blue on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
   /* Features */
   .f{
     display: flex;

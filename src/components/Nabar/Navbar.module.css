@@ -18,7 +18,7 @@
     gap: 70px;
     align-items: center;
     font: 20px bold ;
-    /* z-index: 1000; */
+    z-index: 1000;
     background-color: rgba(217, 217, 217, 1);
     position: fixed;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

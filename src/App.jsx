@@ -1,3 +1,4 @@
+// App.jsx
 import React from 'react';
 import { Route, Routes, useLocation, BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Nabar/Navbar';
@@ -16,6 +17,8 @@ import Explore from './components/Home/Explore';
 import FileU from './components/Home/Upload/FileU';
 import TestList from './components/Home/Quiz/TestList';
 import QuizApp from './components/Home/Quiz/QuizApp';
+import GateTestPractice from './components/Home/Gate/GateTestPractice';
+import TestDetail from './components/Home/Gate/TestDetail';
 import 'primereact/resources/themes/saga-blue/theme.css';  // or any other theme you prefer
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
@@ -51,14 +54,10 @@ function App() {
 
   // Determine if current path is '/onlinecompiler'
   const isOnlineCompilerPage = location.pathname === '/onlinecompiler';
-  const isQuiz = location.pathname === '/quiz/dbms';
+  const isQuiz = location.pathname.startsWith('/quiz');
   return (
     <>
-      {/* Conditional rendering of Navbar */}
-      {/* {&& } */}
-      {
-        (!isOnlineCompilerPage && !isQuiz) ? <Navbar /> : null
-      }
+      {(!isOnlineCompilerPage && !isQuiz) ? <Navbar /> : null}
 
       <Routes>
         <Route path="/homepage" element={<HomePage />} />
@@ -78,6 +77,8 @@ function App() {
         <Route path="/quiz/os" element={<QuizApp questions={osQuestions} />} />
         <Route path="/quiz/cn" element={<QuizApp questions={cnQuestions} />} />
         <Route path="/quiz/java" element={<QuizApp questions={javaQuestions} />} />
+        <Route path="/gate" element={<GateTestPractice />} />
+        <Route path="/test/:id" element={<TestDetail />} />
       </Routes>
     </>
   );

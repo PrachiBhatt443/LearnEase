@@ -4,6 +4,7 @@ import p from '../img/image2.png';
 import q from '../img/img1.png';
 import r from '../img/img2.png'
 import s from '../img/img3.png'
+import Foot from '../footer/Foot';
 const Features = () => {
   const features = [
     {
@@ -37,7 +38,7 @@ const Features = () => {
     const interval = setInterval(() => {
       const nextFeature = (currentFeature + 1) % features.length;
       setCurrentFeature(nextFeature);
-    }, 5000); // Change image every 5 seconds
+    }, 2000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
   }, [currentFeature, features.length]);
@@ -77,6 +78,7 @@ const Features = () => {
           <img src={features[currentFeature].image} alt={`Feature ${currentFeature + 1}`} />
         </div>
       </div>
+      <Foot/>
     </>
   )
 }
