@@ -60,6 +60,7 @@ function App() {
       {(!isOnlineCompilerPage && !isQuiz) ? <Navbar /> : null}
 
       <Routes>
+       <Route path="/" element={<HomePage/>}/>
         <Route path="/homepage" element={<HomePage />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/dashboard" element={<Dashboard />} />
